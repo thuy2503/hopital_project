@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "dashboard": "Tổng quan",
+    "doctors": "Đội ngũ Bác sĩ",
+    "drugs": "Kho Thuốc",
+    "invoices": "Viện phí",
+    "patients": "Bệnh nhân",
+    "records": "Hồ sơ Bệnh án",
+    "appointments": "Lịch khám hẹn",
+    "search": "Tra cứu chung",
+    "chat": "Tư vấn trực tuyến",
+    "blog": "Kiến thức y khoa",
+    "subscriptions": "Gói chăm sóc",
+    "settings": "Cài đặt cá nhân",
+    "reports": "Báo cáo thống kê",
+    "logout": "Đăng xuất",
+    "management": "Quản lý Menu",
+    "role_doctor": "BÁC SĨ",
+    "role_admin": "QUẢN TRỊ VIÊN",
+    "role_patient": "BỆNH NHÂN",
+    "role_staff": "NHÂN VIÊN",
+    "role_nurse": "ĐIỀU DƯỠNG",
+    "role_pharmacist": "DƯỢC SĨ",
+    "role_accountant": "KẾ TOÁN"
+  },
+  "landing": {
+    "hospital_name": "medpro sg",
+    "back_home": "Quay lại trang chủ",
+    "nav_home": "Trang chủ",
+    "nav_hospital": "medpro sg",
+    "nav_medical_services": "Dịch vụ y khoa",
+    "nav_customers_insurance": "Dịch vụ khách hàng & Bảo hiểm",
+    "nav_doctors": "Bác sĩ",
+    "nav_news": "Tin tức",
+    "nav_recruitment_v2": "Tuyển dụng",
+    "nav_contact_v2": "Liên hệ",
+    "nav_about": "Về chúng tôi",
+    "nav_network": "Mạng lưới MedPro",
+    "nav_recruitment": "Tuyển dụng",
+    "nav_community": "Cộng đồng",
+    "nav_settings": "Cài đặt",
+    "nav_packages": "Gói khám",
+    "topbar": {
+      "faq": "Hỏi đáp",
+      "emergency": "Cấp cứu * 1155",
+      "login": "ĐĂNG NHẬP"
+    },
+    "book_now": "Đặt lịch hẹn",
+    "login_nv": "Đăng nhập nhân viên",
+    "care": {
+      "c_title": "Cam kết",
+      "c_subtitle": "về chất lượng chăm sóc",
+      "c_desc": "Chúng tôi cam kết cung cấp dịch vụ chăm sóc chất lượng với người bệnh là trung tâm",
+      "a_title": "Trách nhiệm",
+      "a_subtitle": "vì sức khỏe người bệnh",
+      "a_desc": "Chúng tôi làm chủ kết quả của hành động, xây dựng niềm tin với đồng nghiệp và người bệnh",
+      "r_title": "Tôn trọng",
+      "r_subtitle": "vì cộng đồng",
+      "r_desc": "Chúng tôi luôn tôn trọng và công bằng với tất cả mọi người",
+      "e_title": "Đồng cảm",
+      "e_subtitle": "với người bệnh",
+      "e_desc": "Chúng tôi luôn thấu cảm và tận tâm trong tất cả điều mình làm"
+    },
+    "actions": {
+      "book": "Đặt lịch hẹn",
+      "packages": "Lựa chọn gói khám",
+      "contact": "Liên hệ",
+      "all_packages": "Tất cả gói khám",
+      "all_specialties": "Tất cả chuyên khoa",
+      "all_doctors": "Tất cả bác sĩ",
+      "see_more": "Xem thêm"
+    },
+    "packages": {
+      "title": "Gói khám ưu đãi",
+      "subtitle": "Lựa chọn chăm sóc sức khỏe thông minh hơn với các gói dịch vụ giá trị tuyệt vời của MedPro Saigon",
+      "items": [
+        { "title": "Gói tầm soát đột quỵ não", "desc": "Khám sức khỏe định kỳ giúp phát hiện sớm nguy cơ và can thiệp kịp thời.", "hospital": "Bệnh viện MedPro Cửu Long" },
+        { "title": "Gói Tổng Quát & Tầm Soát Ung Thư Nam", "desc": "Tầm soát nguy cơ ung thư và các bệnh mạn tính cho nam giới.", "hospital": "Bệnh viện MedPro Thủ Đức" },
+        { "title": "Gói Tầm Soát Đột Quỵ", "desc": "Sàng lọc nguy cơ đột quỵ với siêu âm, xét nghiệm.", "hospital": "Bệnh viện MedPro Thủ Đức" },
+        { "title": "Gói tầm soát ung thư Nam", "desc": "Khám tầm soát ung thư giúp phát hiện sớm các dấu hiệu bất thường.", "hospital": "Bệnh viện MedPro Bình Dương" }
+      ]
+    },
+    "hero": {
+      "title": "Hệ Thống Dịch Vụ Y Tế Đáng Tin Cậy Tại Việt Nam",
+      "awards": "Giải thưởng"
+    },
+    "specialties_full": {
+      "title": "Chuyên khoa mũi nhọn",
+      "subtitle": "MedPro Saigon cung cấp một loạt chuyên khoa và dịch vụ y tế đa dạng, kết hợp kinh nghiệm y tế với công nghệ tiên tiến để cung cấp sự chăm sóc cao nhất cho bệnh nhân.",
+      "items": [
+        { "title": "Tim mạch", "slug": "cardiology" },
+        { "title": "Sản phụ khoa", "slug": "obgyn" },
+        { "title": "Nhi khoa", "slug": "pediatrics" }
+      ],
+      "see_details": "Tìm hiểu thêm"
+    },
+    "doctors_full": {
+      "title": "Bác sĩ của chúng tôi, tận tâm vì sức khỏe bạn",
+      "subtitle": "Mang đến dịch vụ chăm sóc sức khỏe chất lượng cao với đội ngũ bác sĩ giàu kinh nghiệm và hết lòng vì bệnh nhân.",
+      "items": [
+        { "name": "ThS.Bs.CKII. Trần Văn Biên", "title": "Phó Giám đốc bệnh viện" },
+        { "name": "Bs.CKI. Phạm Tuấn Thanh", "title": "Giám Đốc Bệnh Viện" },
+        { "name": "Bs.CKII. Trần Văn Thuận", "title": "Giám đốc chuyên môn" },
+        { "name": "TS.BS.CKII. Lê Thọ", "title": "Giám đốc bệnh viện" }
+      ]
+    },
+    "appointment_banner": {
+      "title": "Đặt lịch hẹn hôm nay",
+      "subtitle": "Sức khỏe của bạn rất quan trọng - hãy đặt lịch ngay với chúng tôi để được tư vấn.",
+      "cta_book": "ĐẶT LỊCH HẸN",
+      "cta_specialties": "TẤT CẢ CHUYÊN KHOA"
+    },
+    "footer": {
+       "address": "Phòng 1101, Lầu 11, Tòa nhà Friendship, 31 Lê Duẩn, phường Sài Gòn, TP. Hồ Chí Minh",
+       "slogan": "Tận tâm chăm sóc vì sức khỏe cộng đồng",
+       "media_title": "Truyền thông",
+       "media_items": ["Hội thảo & Hội nghị", "Tin tức", "Giải thưởng", "Sự kiện", "Thư viện"],
+       "download_app": "Tải ứng dụng",
+       "privacy": "Chính sách bảo mật",
+       "terms": "Điều khoản sử dụng",
+       "all_rights": "© 2026 MedPro Saigon Corporation. Bảo lưu mọi quyền."
+    },
+    "cookie": {
+      "desc": "Bằng cách nhấp vào \"Chấp nhận tất cả\", bạn đồng ý với việc lưu trữ cookie trên thiết bị của mình để cải thiện trải nghiệm điều hướng trang web và phân tích việc sử dụng.",
+      "reject": "Từ chối",
+      "accept": "Chấp nhận"
+    },
+    "contact_page": {
+      "title": "Liên hệ với chúng tôi",
+      "subtitle": "Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Hãy để lại thông tin, đội ngũ MedPro Saigon sẽ phản hồi sớm nhất.",
+      "form": {
+        "name": "Họ và tên",
+        "email": "Địa chỉ Email",
+        "phone": "Số điện thoại",
+        "subject": "Chủ đề",
+        "message": "Nội dung lời nhắn",
+        "submit": "Gửi tin nhắn",
+        "sending": "Đang gửi...",
+        "success": "Cảm ơn bạn! Tin nhắn của bạn đã được gửi thành công."
+      },
+      "info": {
+        "address_label": "Địa chỉ trụ sơ",
+        "working_hours": "Giờ làm việc",
+        "hours_detail": "Thứ 2 - Thứ 7: 07:30 - 16:30",
+        "hotline": "Hotline cấp cứu 24/7"
+      }
+    },
+    "about_page": {
+      "title": "Về MedPro Saigon",
+      "subtitle": "Hơn 20 năm đồng hành cùng sức khỏe người Việt với tiêu chuẩn y tế quốc tế và sự tận tâm không ngừng nghỉ.",
+      "mission": {
+        "title": "Sứ mệnh của chúng tôi",
+        "desc": "Cung cấp dịch vụ chăm sóc sức khỏe chất lượng cao, an toàn và dễ tiếp cận cho mọi người dân Việt Nam."
+      },
+      "vision": {
+        "title": "Tầm nhìn 2030",
+        "desc": "Trở thành hệ thống y tế tư nhân hàng đầu Đông Nam Á, tiên phong trong công nghệ và cá nhân hóa điều trị."
+      },
+      "values": {
+        "title": "Giá trị cốt lõi",
+        "items": ["Tận tâm", "Chuyên nghiệp", "Đổi mới", "Chính trực"]
+      },
+      "stats": {
+        "doctors": "Hơn 500 Bác sĩ",
+        "patients": "2 Triệu+ Bệnh nhân/Năm",
+        "years": "25 Năm Kinh nghiệm",
+        "awards": "15 Giải thưởng Quốc tế"
+      }
+    }
+  },
+  "auth": {
+    "login_title": "Đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "login_btn": "Đăng nhập",
+    "no_account": "Chưa có tài khoản?",
+    "register_here": "Đăng ký tại đây",
+    "register_title": "Đăng ký tài khoản",
+    "full_name": "Họ và tên",
+    "role": "Vai trò",
+    "register_btn": "Đăng ký",
+    "login_now": "Đăng nhập ngay"
+  },
+  "settings": {
+    "title": "Cài đặt Cá nhân",
+    "desc": "Quản lý lịch làm việc và giới hạn bệnh nhân hàng ngày của bạn.",
+    "max_patients": "Số bệnh nhân tối đa mỗi ngày",
+    "max_patients_desc": "Hệ thống sẽ tự động khóa đặt lịch khi đạt đến con số này.",
+    "schedule": "Lịch làm việc chi tiết",
+    "schedule_desc": "Ví dụ: Thứ 2 - Thứ 6 (08:00 - 17:00). Thông tin này sẽ hiện thị cho bệnh nhân.",
+    "save_btn": "Lưu thay đổi",
+    "saving": "Đang lưu...",
+    "success_msg": "Cấu hình đã được lưu thành công!",
+    "danger_zone": "Khu vực nguy hiểm",
+    "delete_desc": "Một khi bạn xóa tài khoản, toàn bộ hồ sơ y tế và lịch hẹn của bạn sẽ bị gỡ bỏ khỏi hệ thống MedPro.",
+    "delete_btn": "XÓA VĨNH VIỄN TÀI KHOẢN"
+  },
+  "reports": {
+    "title": "Báo cáo & Thống kê",
+    "desc": "Phân tích chuyên sâu về doanh thu, dược phẩm và bệnh nhân.",
+    "revenue": "Tổng doanh thu",
+    "new_patients": "Bệnh nhân mới",
+    "treating": "Đang điều trị",
+    "drug_consumption": "Tiêu thụ dược phẩm",
+    "revenue_share": "Tỷ lệ đóng góp doanh thu",
+    "top_drugs_desc": "Top 5 loại thuốc mang lại doanh thu cao nhất theo kỳ.",
+    "loading": "Đang tổng hợp báo cáo..."
+  },
+  "drugs": {
+    "title": "Kho Thuốc & Vật Tư",
+    "desc": "Quản lý danh mục, giá bán và tồn kho",
+    "add_new": "Nhập Thuốc Mới",
+    "search_placeholder": "Tìm kiếm theo Tên hoặc Thành phần...",
+    "table_name": "Tên Thuốc",
+    "table_ingredients": "Thành phần",
+    "table_price": "Giá bán (VNĐ)",
+    "table_stock": "Tồn kho",
+    "table_actions": "Thao tác",
+    "no_data": "Chưa có dữ liệu thuốc nào được lưu"
+  },
+  "common": {
+    "show_hide_cols": "Ẩn/Hiện cột",
+    "copy": "Copy",
+    "copied": "Đã copy",
+    "no_results": "Không tìm thấy dữ liệu phù hợp.",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận"
+  },
+  "search": {
+    "title": "Tra cứu & Đặt lịch",
+    "desc": "Tìm kiếm bác sĩ, chuyên khoa hoặc dịch vụ y tế.",
+    "placeholder": "Nhập tên bác sĩ, chuyên khoa...",
+    "tabs": {
+      "doctors": "Bác sĩ",
+      "drugs": "Thuốc & Vật tư",
+      "specialties": "Chuyên khoa"
+    },
+    "table": {
+      "dr_name": "Tên bác sĩ",
+      "specialty": "Chuyên khoa",
+      "max_patients": "Số BN/ngày",
+      "schedule": "Lịch làm việc",
+      "rating": "Đánh giá",
+      "feedback": "Gửi phản hồi"
+    }
+  },
+  "register_patient": {
+    "title": "Tạo Hồ Sơ Điện Tử",
+    "desc": "Đăng ký trực tuyến để hẹn khám nhanh",
+    "form": {
+      "full_name": "Họ và tên",
+      "dob": "Ngày sinh",
+      "phone": "Số điện thoại",
+      "gender": "Giới tính",
+      "username": "Tên đăng nhập mới",
+      "password": "Mật khẩu",
+      "submit": "Tạo hồ sơ và Đăng ký",
+      "loading": "Đang xác thực...",
+      "success": "Tạo hồ sơ thành công! Đang chuyển hướng...",
+      "have_account": "Bạn đã tạo hồ sơ Online?"
+    }
+  }
+}

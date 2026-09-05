@@ -1,0 +1,265 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  email     String?  @unique
+  role      String   @default("DOCTOR") // DOCTOR, ADMIN, STAFF, PATIENT
+  name      String
+  specialty String?
+  imageUrl  String?
+  maxPatients Int @default(20)
+  schedule    String?  // JSON string or working hours text
+  consultationFee Float @default(200000) // Default 200,000 VND
+  isAcceptingPatients Boolean @default(true)
+  createdAt DateTime @default(now())
+  records   MedicalRecord[]
+  appointments Appointment[]
+  patientProfile Patient?
+  
+  // Added relations to fix P1012 validation error
+  reviewsWritten  Review[]       @relation("UserReviews")
+  reviewsReceived Review[]       @relation("DoctorReviews")
+  posts           Post[]
+  subscriptions   Subscription[]
+  sentMessages    Message[]      @relation("SentMessages")
+  receivedMessages Message[]     @relation("ReceivedMessages")
+  labTests        LabTest[]
+}
+
+model Patient {
+  id          Int      @id @default(autoincrement())
+  userId      Int?     @unique
+  user        User?    @relation(fields: [userId], references: [id])
+  fullName    String
+  dob         DateTime
+  gender      String
+  idCard      String?
+  healthInsurance String?
+  phone       String
+  emergencyContact String?
+  address     String
+  email       String?  @unique
+  history     String?
+  bloodType   String?
+  createdAt   DateTime @default(now())
+  records     MedicalRecord[]
+  appointments Appointment[]
+  invoices    Invoice[]
+  labTests    LabTest[]
+}
+
+model MedicalRecord {
+  id          Int      @id @default(autoincrement())
+  patientId   Int
+  doctorId    Int
+  symptoms    String?
+  diagnosis   String
+  icd10Code   String?
+  prescription String?
+  notes       String?
+  bloodPressure String?
+  heartRate     Int?
+  temperature   Float?
+  weight        Float?
+  prescriptionStatus String @default("PENDING") // PENDING, APPROVED, REJECTED
+  doctorSignature String?
+  createdAt   DateTime @default(now())
+
+  patient     Patient  @relation(fields: [patientId], references: [id])
+  doctor      User     @relation(fields: [doctorId], references: [id])
+  invoice     Invoice?
+  prescriptionItems PrescriptionItem[]
+  histories   MedicalRecordHistory[]
+  labTests    LabTest[]
+  attachments Attachment[]
+}
+
+model Drug {
+  id            Int      @id @default(autoincrement())
+  name          String
+  ingredient    String?
+  usage         String?
+  unit          String?  // Ví dụ: Viên, Chai, Vỉ
+  price         Float    @default(0)
+  inStock       Int      @default(0)
+  specialty     String?  // Chuyên khoa phù hợp (ví dụ: Nội tổng quát, Tim mạch, Tai Mũi Họng...)
+  code          String?  // Mã thuốc Bộ Y tế
+  registrationNo String? // Số đăng ký thuốc
+  concentration String?  // Hàm lượng
+  route         String?  // Đường dùng
+  expiryDate    DateTime? // Hạn sử dụng
+  createdAt     DateTime @default(now())
+  prescriptions PrescriptionItem[]
+  interactionsAsDrugA DrugInteraction[] @relation("DrugAInteractions")
+  interactionsAsDrugB DrugInteraction[] @relation("DrugBInteractions")
+  inventoryLogs InventoryLog[]
+}
+
+model InventoryLog {
+  id        Int      @id @default(autoincrement())
+  drugId    Int
+  type      String   // IMPORT, EXPORT, DISPENSE, ADJUSTMENT
+  quantity  Int
+  notes     String?
+  createdAt DateTime @default(now())
+
+  drug      Drug     @relation(fields: [drugId], references: [id], onDelete: Cascade)
+}
+
+model PrescriptionItem {
+  id              Int           @id @default(autoincrement())
+  recordId        Int
+  drugId          Int
+  quantity        Int           @default(1)
+  instructions    String?
+  price           Float         @default(0)
+  
+  record          MedicalRecord @relation(fields: [recordId], references: [id], onDelete: Cascade)
+  drug            Drug          @relation(fields: [drugId], references: [id])
+}
+
+model Invoice {
+  id          Int      @id @default(autoincrement())
+  patientId   Int
+  recordId    Int?     @unique
+  totalAmount Float    @default(0)
+  status      String   @default("UNPAID") // UNPAID, PAID
+  paymentDate DateTime?
+  createdAt   DateTime @default(now())
+
+  patient     Patient        @relation(fields: [patientId], references: [id])
+  record      MedicalRecord? @relation(fields: [recordId], references: [id], onDelete: Cascade)
+}
+
+model Appointment {
+  id          Int       @id @default(autoincrement())
+  patientId   Int
+  doctorId    Int
+  date        DateTime
+  status      String    @default("PENDING") // PENDING, CONFIRMED, COMPLETED, CANCELLED
+  reason      String?
+  type        String    @default("OFFLINE") // ONLINE, OFFLINE
+  timeSlot    String?
+  queueNumber Int?
+  checkInTime DateTime?
+  roomNumber  String?
+  createdAt   DateTime  @default(now())
+
+  patient     Patient  @relation(fields: [patientId], references: [id])
+  doctor      User     @relation(fields: [doctorId], references: [id])
+}
+
+model Service {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float    @default(0)
+  duration    Int      @default(30) // Duration in minutes
+  createdAt   DateTime @default(now())
+  reviews     Review[]
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  rating    Int
+  comment   String?
+  author    User     @relation("UserReviews", fields: [authorId], references: [id])
+  authorId  Int
+  doctor    User?    @relation("DoctorReviews", fields: [doctorId], references: [id])
+  doctorId  Int?
+  service   Service? @relation(fields: [serviceId], references: [id])
+  serviceId Int?
+  createdAt DateTime @default(now())
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Subscription {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+  patient     User?    @relation(fields: [patientId], references: [id])
+  patientId   Int?
+  startDate   DateTime @default(now())
+  active      Boolean  @default(true)
+}
+
+model Message {
+  id          Int      @id @default(autoincrement())
+  content     String
+  senderId    Int
+  receiverId  Int
+  createdAt   DateTime @default(now())
+
+  sender      User     @relation("SentMessages", fields: [senderId], references: [id])
+  receiver    User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
+}
+
+model MedicalRecordHistory {
+  id                Int      @id @default(autoincrement())
+  recordId          Int
+  changedById       Int
+  previousDiagnosis String?
+  previousNotes     String?
+  createdAt         DateTime @default(now())
+
+  record            MedicalRecord @relation(fields: [recordId], references: [id], onDelete: Cascade)
+}
+
+model DrugInteraction {
+  id          Int      @id @default(autoincrement())
+  drugAId     Int
+  drugBId     Int
+  severity    String   @default("WARNING") // WARNING, DANGER
+  description String
+
+  drugA       Drug     @relation("DrugAInteractions", fields: [drugAId], references: [id], onDelete: Cascade)
+  drugB       Drug     @relation("DrugBInteractions", fields: [drugBId], references: [id], onDelete: Cascade)
+  
+  @@unique([drugAId, drugBId])
+}
+
+model LabTest {
+  id          Int      @id @default(autoincrement())
+  patientId   Int
+  doctorId    Int
+  recordId    Int?
+  testName    String
+  result      String?
+  notes       String?
+  status      String   @default("PENDING") // PENDING, COMPLETED
+  fileUrl     String?  // Optional attachment
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  patient     Patient        @relation(fields: [patientId], references: [id])
+  doctor      User           @relation(fields: [doctorId], references: [id])
+  record      MedicalRecord? @relation(fields: [recordId], references: [id], onDelete: SetNull)
+}
+
+model Attachment {
+  id        Int           @id @default(autoincrement())
+  recordId  Int
+  url       String        // Base64 image/file data
+  name      String
+  type      String
+  record    MedicalRecord @relation(fields: [recordId], references: [id], onDelete: Cascade)
+}

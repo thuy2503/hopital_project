@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "doctors": "Doctors",
+    "drugs": "Pharmacy",
+    "invoices": "Invoices",
+    "patients": "Patients",
+    "records": "Medical Records",
+    "appointments": "Appointments",
+    "search": "General Search",
+    "chat": "Live Consultation",
+    "blog": "Health Blog",
+    "subscriptions": "Health Plans",
+    "settings": "Settings",
+    "reports": "Reports",
+    "logout": "Logout",
+    "management": "Management",
+    "role_doctor": "DOCTOR",
+    "role_admin": "ADMIN",
+    "role_patient": "PATIENT",
+    "role_staff": "STAFF",
+    "role_nurse": "NURSE",
+    "role_pharmacist": "PHARMACIST",
+    "role_accountant": "ACCOUNTANT"
+  },
+  "landing": {
+    "hospital_name": "medpro sg",
+    "back_home": "Back to Home",
+    "nav_home": "Home",
+    "nav_hospital": "medpro sg",
+    "nav_medical_services": "Medical Services",
+    "nav_customers_insurance": "Customer Service & Insurance",
+    "nav_doctors": "Doctors",
+    "nav_news": "News",
+    "nav_recruitment_v2": "Recruitment",
+    "nav_contact_v2": "Contact",
+    "nav_about": "About Us",
+    "nav_network": "MedPro Network",
+    "nav_recruitment": "Careers",
+    "nav_community": "Community",
+    "nav_settings": "Settings",
+    "nav_packages": "Packages",
+    "topbar": {
+      "faq": "FAQ",
+      "emergency": "Emergency * 1155",
+      "login": "LOGIN"
+    },
+    "book_now": "Book Appointment",
+    "login_nv": "Staff Login",
+    "care": {
+      "c_title": "Commitment",
+      "c_subtitle": "to quality care",
+      "c_desc": "We are committed to providing quality care with the patient at the center",
+      "a_title": "Responsibility",
+      "a_subtitle": "for patient health",
+      "a_desc": "We take ownership of our actions, building trust with colleagues and patients",
+      "r_title": "Respect",
+      "r_subtitle": "for the community",
+      "r_desc": "We always respect and act fairly with everyone",
+      "e_title": "Empathy",
+      "e_subtitle": "for patients",
+      "e_desc": "We always empathize and be dedicated in everything we do"
+    },
+    "actions": {
+      "book": "Book Appointment",
+      "packages": "Choose Packages",
+      "contact": "Contact Us",
+      "all_packages": "All Packages",
+      "all_specialties": "All Specialties",
+      "all_doctors": "All Doctors",
+      "see_more": "See more"
+    },
+    "packages": {
+      "title": "Special Checkup Packages",
+      "subtitle": "Choose smarter healthcare with great value service packages from MedPro Saigon",
+      "items": [
+        { "title": "Brain Stroke Screening Package", "desc": "Regular health checks help detect risks early and intervene timely.", "hospital": "MedPro Cuu Long Hospital" },
+        { "title": "General & Male Cancer Screening Package", "desc": "Screening for cancer risks and chronic diseases for men.", "hospital": "MedPro Thu Duc Hospital" },
+        { "title": "Stroke Screening Package", "desc": "Stroke risk screening with ultrasound and lab tests.", "hospital": "MedPro Thu Duc Hospital" },
+        { "title": "Male Cancer Screening Package", "desc": "Cancer screening helps early detection of abnormal signs.", "hospital": "MedPro Binh Duong Hospital" }
+      ]
+    },
+    "hero": {
+      "title": "Trusted Medical Service System In Vietnam",
+      "awards": "Awards"
+    },
+    "specialties_full": {
+      "title": "Core Specialties",
+      "subtitle": "MedPro Saigon provides a wide range of specialties and medical services, combining medical experience with advanced technology.",
+      "items": [
+        { "title": "Cardiology", "slug": "cardiology" },
+        { "title": "Obstetrics & Gynecology", "slug": "obgyn" },
+        { "title": "Pediatrics", "slug": "pediatrics" }
+      ],
+      "see_details": "See more"
+    },
+    "doctors_full": {
+      "title": "Our Doctors, Dedicated to Your Health",
+      "subtitle": "Providing high-quality healthcare with an experienced and dedicated medical team.",
+      "items": [
+        { "name": "MSc.Dr.SpecII. Tran Van Bien", "title": "Vice Director" },
+        { "name": "Dr.SpecI. Pham Tuan Thanh", "title": "Hospital Director" },
+        { "name": "Dr.SpecII. Tran Van Thuan", "title": "Chief Medical Officer" },
+        { "name": "PhD.Dr.SpecII. Le Tho", "title": "Hospital Director" }
+      ]
+    },
+    "appointment_banner": {
+      "title": "Book An Appointment Today",
+      "subtitle": "Your health is important - book an appointment with us now for a consultation.",
+      "cta_book": "BOOK APPOINTMENT",
+      "cta_specialties": "ALL SPECIALTIES"
+    },
+    "footer": {
+       "address": "Room 1101, 11th Floor, Friendship Building, 31 Le Duan, District 1, Ho Chi Minh City",
+       "slogan": "Dedicated care for community health",
+       "media_title": "Media",
+       "media_items": ["Seminars & Conferences", "News", "Awards", "Events", "Gallery"],
+       "download_app": "Download App",
+       "privacy": "Privacy Policy",
+       "terms": "Terms of Use",
+       "all_rights": "© 2026 MedPro Saigon Corporation. All rights reserved."
+    },
+    "cookie": {
+      "desc": "By clicking \"Accept All\", you agree to the storing of cookies on your device to enhance site navigation and analyze usage.",
+      "reject": "Reject",
+      "accept": "Accept"
+    },
+    "contact_page": {
+      "title": "Contact Us",
+      "subtitle": "We are always ready to listen and support you. Please leave your information, and the MedPro Saigon team will respond as soon as possible.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "subject": "Subject",
+        "message": "Message content",
+        "submit": "Send Message",
+        "sending": "Sending...",
+        "success": "Thank you! Your message has been sent successfully."
+      },
+      "info": {
+        "address_label": "Headquarters Address",
+        "working_hours": "Working Hours",
+        "hours_detail": "Mon - Sat: 07:30 - 16:30",
+        "hotline": "24/7 Emergency Hotline"
+      }
+    },
+    "about_page": {
+      "title": "About MedPro Saigon",
+      "subtitle": "Over 20 years of accompanying Vietnamese health with international medical standards and unceasing dedication.",
+      "mission": {
+        "title": "Our Mission",
+        "desc": "To provide high-quality, safe, and accessible healthcare services for all Vietnamese people."
+      },
+      "vision": {
+        "title": "Vision 2030",
+        "desc": "To become a leading private healthcare system in Southeast Asia, pioneering in technology and personalized treatment."
+      },
+      "values": {
+        "title": "Core Values",
+        "items": ["Dedication", "Professionalism", "Innovation", "Integrity"]
+      },
+      "stats": {
+        "doctors": "Over 500 Doctors",
+        "patients": "2 Million+ Patients/Year",
+        "years": "25 Years of Experience",
+        "awards": "15 International Awards"
+      }
+    }
+  },
+  "auth": {
+    "login_title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "login_btn": "Login",
+    "no_account": "Don't have an account?",
+    "register_here": "Register here",
+    "register_title": "Create Account",
+    "full_name": "Full Name",
+    "role": "Role",
+    "register_btn": "Register",
+    "login_now": "Login now"
+  },
+  "settings": {
+    "title": "Personal Settings",
+    "desc": "Manage your daily patient limit and work schedule.",
+    "max_patients": "Maximum Patients per Day",
+    "max_patients_desc": "The system will automatically lock booking when this limit is reached.",
+    "schedule": "Detailed Schedule",
+    "schedule_desc": "Example: Mon - Fri (08:00 - 17:00). This info will be visible to patients.",
+    "save_btn": "Save Changes",
+    "saving": "Saving...",
+    "success_msg": "Configuration saved successfully!",
+    "danger_zone": "Danger Zone",
+    "delete_desc": "Once you delete your account, all medical records and appointments will be permanently removed.",
+    "delete_btn": "PERMANENTLY DELETE ACCOUNT"
+  },
+  "reports": {
+    "title": "Reports & Analytics",
+    "desc": "In-depth analysis of revenue, pharmaceuticals, and patients.",
+    "revenue": "Total Revenue",
+    "new_patients": "New Patients",
+    "treating": "In Treatment",
+    "drug_consumption": "Drug Consumption",
+    "revenue_share": "Revenue Contribution Rate",
+    "top_drugs_desc": "Top 5 highest revenue-generating drugs by period.",
+    "loading": "Compiling reports..."
+  },
+  "drugs": {
+    "title": "Pharmacy & Supplies",
+    "desc": "Manage catalog, pricing, and inventory",
+    "add_new": "Add New Drug",
+    "search_placeholder": "Search by Name or Ingredients...",
+    "table_name": "Drug Name",
+    "table_ingredients": "Ingredients",
+    "table_price": "Price (VND)",
+    "table_stock": "In Stock",
+    "table_actions": "Actions",
+    "no_data": "No drug data available"
+  },
+  "common": {
+    "show_hide_cols": "Show/Hide columns",
+    "copy": "Copy",
+    "copied": "Copied",
+    "no_results": "No matching data found.",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "search": {
+    "title": "Search & Booking",
+    "desc": "Search for doctors, specialties, or medical services.",
+    "placeholder": "Enter doctor name, specialty...",
+    "tabs": {
+      "doctors": "Doctors",
+      "drugs": "Drugs & Supplies",
+      "specialties": "Specialties"
+    },
+    "table": {
+      "dr_name": "Doctor Name",
+      "specialty": "Specialty",
+      "max_patients": "Ref/Day",
+      "schedule": "Schedule",
+      "rating": "Rating",
+      "feedback": "Send Feedback"
+    }
+  },
+  "register_patient": {
+    "title": "Create Electronic Record",
+    "desc": "Register online for faster appointment booking",
+    "form": {
+      "full_name": "Full Name",
+      "dob": "Date of Birth",
+      "phone": "Phone Number",
+      "gender": "Gender",
+      "username": "New Username",
+      "password": "Password",
+      "submit": "Create Record & Register",
+      "loading": "Authenticating...",
+      "success": "Record created successfully! Redirecting...",
+      "have_account": "Already have an account?"
+    }
+  }
+}

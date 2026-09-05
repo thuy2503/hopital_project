@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Database
+dev.db
+dev.db-journal
+
+# Prisma
+/src/generated/prisma/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
